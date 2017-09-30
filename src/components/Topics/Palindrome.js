@@ -25,6 +25,10 @@ class Palindrome extends Component {
     } else if (user) {
       answer = 'False'
     }
+    if (user.match(/\d+/i)) {
+      answer = "Please don't use numbers"
+    }
+
     this.setState({
       palindrome: answer
     });
