@@ -29,9 +29,15 @@ class EvenAndOdd extends Component {
     for (var i = 0; i < newArray.length; i++) {
       if(+newArray[i] % 2 === 0) {
         even.push(+newArray[i])
-      } else {
+      } else if (+newArray[i] % 2) {
         odd.push(+newArray[i])
       }
+    }
+    if (even[0] && odd[0]) {
+      
+    } else {
+      even = ['Use only numbers and commas'];
+      odd = ['Example: 1,2,3,4'];
     }
     this.setState({
       evenArray: even,

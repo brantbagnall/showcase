@@ -23,14 +23,20 @@ class FilterString extends Component {
     var reg = new RegExp (user, "i");
     var fArr = [];
     unArr.forEach(function(word) {
-      if(word.match(reg) && user.length > 0){
+      if(word.match(reg)){
         console.log(word);
         fArr.push(word);
-      } else if (user === '') {
-        fArr = ['No Match']
       }
     });
+    console.log(fArr)
+    if (user === '') {
+      fArr = ['No Match']
+    }
+    if (fArr[0]) {
 
+    } else {
+      fArr = ['No Match']
+    }
     this.setState({
       filteredArray: fArr
     });

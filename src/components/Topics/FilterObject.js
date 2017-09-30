@@ -30,7 +30,7 @@ class FilterObject extends Component {
     var user = this.state.userInput;
     var filArr = []
     unArr.map(function(curr, i, arr){
-      if(curr[user]) {
+      if(curr[user.toLowerCase()]) {
           filArr.push(curr)
         }
         return null;
@@ -52,8 +52,6 @@ class FilterObject extends Component {
     });
     console.log(e.target.value);
   }
-
-  
 
   render() {
     return (

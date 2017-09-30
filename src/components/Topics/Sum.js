@@ -12,13 +12,6 @@ class Sum extends Component {
 
   updateNumber1(e){
     var user = +e.target.value;
-    // var test = 1;
-    // test += +e.target.value;
-    // console.log(test);
-    // if (test) {
-    //   user = 'Please Use a Number for input one'
-    //   this.updateSum();
-    // }
     this.setState({
       number1: user
     });
@@ -26,13 +19,6 @@ class Sum extends Component {
 
   updateNumber2(e){
     var user = +e.target.value;
-    // var test = 1;
-    // test += +e.target.value;
-    // console.log(test);
-    // if (test) {
-    //   user = 'Please Use a Number for input two' 
-    //   this.updateSum();
-    // }
     this.setState({
       number2: user
     });
