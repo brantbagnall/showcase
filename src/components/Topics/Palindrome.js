@@ -20,7 +20,7 @@ class Palindrome extends Component {
     var user = this.state.userInput;
     var answer ='NO TEXT ENTERED';
     var reverse = user.split('').reverse().join('');
-    if (user.toLowerCase() ==  reverse.toLowerCase() && user){
+    if (user.toLowerCase() ===  reverse.toLowerCase() && user){
       answer = 'True'
     } else if (user) {
       answer = 'False'
